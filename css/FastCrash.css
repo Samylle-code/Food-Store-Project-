@@ -1,0 +1,22 @@
+
+
+#alteracoes{
+    background-color: white;
+    height: max-content;
+}
+
+#button2{
+    background-color: #F17228;
+    width: 100%;
+    
+    border-radius: 10px;
+}   
+
+#button2 a {
+    padding: 10px;
+}
+
+#button2:hover{
+    background-color: #FFB30E;
+   
+}
