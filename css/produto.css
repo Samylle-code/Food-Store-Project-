@@ -1,0 +1,65 @@
+.ProdutosTradicionais{
+    background-color: #FFB30E;
+    height: max-content;
+}
+.ProdutosTradicionais{
+    align-items: center;
+    padding: 150px;
+}
+
+.ProdutosTradicionais h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+.ProdutosTradicionais ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+.ProdutosTradicionais ul li img{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    
+}
+
+#nomeProduto{
+    font-weight: none;
+    color: #424242;
+    font-size: 14px;
+}
+
+.valores{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    margin: 10px 0 10px;
+}
+
+#button{
+    background-color: black;
+    width: 100%;
+    
+    border-radius: 10px;
+}   
+
+#button a {
+    padding: 10px;
+}
+
+#button:hover{
+    background-color: white;
+   
+}
+
+.titulo-pedido{
+    text-transform: none;
+    text-decoration: none;
+    color: white;
+}
+
+.titulo-pedido:hover{
+    color: black;
+}

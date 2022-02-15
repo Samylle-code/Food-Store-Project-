@@ -1,0 +1,74 @@
+*{margin: 0; border: none;}
+
+.logozin{
+    display: flex;
+    padding: 0px 0px 0px 200px;
+    margin-bottom: 50px;
+    background-color: white;
+    width: 1200px;
+}
+
+.anuncio{
+    display: flex;
+}
+.anuncio li{
+    display: inline;
+}
+.anuncio li h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 64px;
+    color: #f12828;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+.especiais{
+    
+    margin: 0 auto;
+    padding: 50px 0;
+    margin-left: 70px;
+}
+
+.especiais li{
+    text-decoration: none;
+    color: black;
+     display: inline-block;
+     padding: 20px 10px;   
+     width: 30%;
+     text-align: center;
+     box-sizing:border-box;
+     margin-left: 30px;
+     vertical-align: top; 
+ 
+    margin: 0 1.5%;
+    margin-left: 60px; 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.especiais li:hover{
+    border: 2px #c4c4c4 solid;
+}
+
+.especiais li:active {
+    background-color:  #f4f4f4;
+}
+
+.especiais li:hover h4{
+    font-size: 20px;
+}
+
+.especiais h4{
+    
+    font-size: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.especiais li p{
+    
+   font-weight:100;
+    font-size: 12px;
+}
+

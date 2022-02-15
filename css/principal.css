@@ -1,0 +1,121 @@
+*{margin: 0; border: 0;}
+#principal{
+    background-color: #000000;
+}
+.main{
+    margin: auto;
+    position: static;
+}
+
+.mostrar{
+
+    background-color: #050505;
+    height:max-content; 
+    padding: 50px 0 50px 180px ;
+    min-width: min-content;
+    max-width: max-content;
+    margin: auto;
+   
+}
+
+#tituloPrincipal{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: static;
+    padding-bottom: 20px;
+}
+    
+#slogan{
+    color: white;
+    font-size: 22;
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 20px;
+}
+.caixa{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width:90%;
+    height: auto;
+    
+}
+
+.menuEntrega a {
+     font-family: 'Source Sans Pro', sans-serif;
+     color: #000000;
+
+     text-decoration: none;
+}
+ 
+#Burguer{
+    box-sizing: border-box;
+    width: 400px;
+    height: 300px;
+    display: inline;
+    margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+    #tituloPrincipal{
+      font-size: 60px;
+    }
+    .main{
+        box-sizing: border-box;
+    }
+    .mostrar{
+      display: flex;  
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    #burguer{
+        margin: auto;
+    }
+    .menuEntrega{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        padding: 10px 0 30px;
+    }
+    .menuEntrega li{
+        display: inline;
+        margin-right: 30px;
+    }
+
+
+}
+@media screen and (max-width:1024px) {
+    #tituloPrincipal{
+        font-size: 36px;
+    }
+    .main{
+        text-align: center;
+        position: absolute;
+    }
+    .mostrar{
+        padding: 50px 0 50px 20px;
+    }
+    .caixa{
+        margin: auto;
+        width: max-content;
+    }
+
+    #burguer{
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin:auto;
+        position: relative;
+    }
+    .menuEntrega{
+        padding-right: 50px;
+    }
+    .menuEntrega li{
+        display: inline;
+        margin-right: 15px;
+    }
+    .menuEntrega a{
+        font-size: 13px;
+    }
+}
