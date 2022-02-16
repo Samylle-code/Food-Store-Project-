@@ -1,18 +1,45 @@
-<<<<<<< HEAD
-function myFunction() {
-    var x = document.getElementById("mycabecalho");
-    if (x.className === "cabecalho") {
-      x.className += " responsive";
-    } else {
-      x.className = "cabecalho";
+class MobileNavBar{
+    constructor(mobileMenu, navList, navLinks ){
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelector(navLinks);
+        this.activeClass = "active";
+
+        this.handleClick = this.handleClick.bind(this);
     }
-=======
-function myFunction() {
-    var x = document.getElementById("mycabecalho");
-    if (x.className === "cabecalho") {
-      x.className += " responsive";
-    } else {
-      x.className = "cabecalho";
+    animateLinks() {
+        this.navLinks.forEach((link, index) => {
+          link.style.animation
+            ? (link.style.animation = "")
+            : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+                index / 7 + 0.3
+              }s`);
+        });
+      }
+    
+      handleClick() {
+        this.navList.classList.toggle(this.activeClass);
+        this.mobileMenu.classList.toggle(this.activeClass);
+        this.animateLinks();
+      }
+    
+    addClickEvent(){
+        this.mobileMenu.addEventListener("click", this.handleClick);
     }
->>>>>>> 70c9c6ab8bd632d0a451b34d397f3062e262284e
-  }
+    init(){
+        if(this.mobileMenu){
+            this.addClickEvent();
+
+        }
+        return this;
+    }
+}
+
+const mobileNavBar = new MobileNavBar(
+    ".header__nav--hamburguer-menu i",
+    ".header__nav",
+    ".header__nav li",
+);
+
+mobileNavBar.init();
+
