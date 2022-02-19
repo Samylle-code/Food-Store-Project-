@@ -12,9 +12,10 @@
     <link rel="stylesheet" type="text/css" href="css/especiais.css">
     <link rel="stylesheet" type="text/css" href="css/produto.css">
     <link rel="stylesheet" type="text/css" href="css/FastCrash.css">
+    <link rel="stylesheet" type="text/css" href="css/btnMenu.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/menuInterativo.js"></script>
+ 
 
 
 </head>
@@ -22,35 +23,25 @@
 
     <header>
         <nav class="header">
-          <a class="header__logo">
-            <img src="img/logo.png" alt="">               
-            <h1>Crash<span>Burguer</span></h1>  
-          </a>
-                     
-            <div class="header__nav--hamburguer-menu"> 
-                <i class="fa fa-bars"></i>
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-                <div class="line4"></div>
-            </div>
-          <ul class="header__nav">            
-            <li class="header__nav--input-search">
-                
-                <input type="text" id="buscar" placeholder="Pesquisar...">
-              <svg width="15" height="15" cursor="pointer" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.7539 15.8242L14.2383 12.3086C14.0625 12.168 13.8516 12.0625 13.6406 12.0625H13.0781C14.0273 10.832 14.625 9.28516 14.625 7.5625C14.625 3.55469 11.3203 0.25 7.3125 0.25C3.26953 0.25 0 3.55469 0 7.5625C0 11.6055 3.26953 14.875 7.3125 14.875C9 14.875 10.5469 14.3125 11.8125 13.3281V13.9258C11.8125 14.1367 11.8828 14.3477 12.0586 14.5234L15.5391 18.0039C15.8906 18.3555 16.418 18.3555 16.7344 18.0039L17.7188 17.0195C18.0703 16.7031 18.0703 16.1758 17.7539 15.8242ZM7.3125 12.0625C4.81641 12.0625 2.8125 10.0586 2.8125 7.5625C2.8125 5.10156 4.81641 3.0625 7.3125 3.0625C9.77344 3.0625 11.8125 5.10156 11.8125 7.5625C11.8125 10.0586 9.77344 12.0625 7.3125 12.0625Z" fill="#FFB30E"/>
-              </svg>  
-  
-              
-            </li> 
-            <li><a href="#Promocoes" class="header__nav--hover">Promocoes</a></li>
-            <li><a href="#Cardapio" class="header__nav--hover">Cardapio</a></li>
-            <li><a href="#FaleConosco" class="header__nav--hover">Fale Conosco</a></li>
-                            
+            <a class="header__logo">
+                <img src="img/logo.png" alt="">               
+                <h1>Crash<span>Burguer</span></h1>  
+            </a>  
+                      
+            <a href="#menu" class="btnMenu btnMenu_open">Menu</a>
 
-
-          </ul>
+            <ul id="menu" class="header__nav"> 
+                <li class="btnMenu btnMenu_close">Sair</li> 
+                <li class="menu-item"> 
+                    <div class="header__nav--input-search">
+                        <input type="text" id="buscar" placeholder="Pesquisar...">
+                        <img src="img/Search.png" id="header__Search" alt="">   
+                    </div>    
+                </li>
+                <li class="menu-item"><a href="#Promocoes" class="header__nav--hover">Promocoes</a></li>
+                <li class="menu-item"><a href="#Cardapio" class="header__nav--hover">Cardapio</a></li>
+                <li class="menu-item"><a href="#FaleConosco" class="header__nav--hover">Fale Conosco</a></li>
+            </ul>
         </nav>
       </header>
     <main>
@@ -63,7 +54,7 @@
 
                     <div class="caixa">
                         <div class="menuEntrega">
-                            <li style="background-color: #F17228;"> 
+                            <li class="entregaActive"> 
                                 <a href="">
                                    <img src="img/IconMoto.png" style="width:20px; height:11px;" alt="">
                                     Delivery
@@ -270,6 +261,6 @@
     <footer>
 
     </footer>
-    <script src="js/menuInterativo.js"></script>
+        <script src="js/menuInterativo.js"></script>
 </body>
 </html>
